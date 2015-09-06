@@ -1,0 +1,185 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mylibrary
+LIBS:PowerSupply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LTC1151CN8 U?
+U 1 1 55ED5551
+P 4750 4150
+F 0 "U?" H 4850 4000 60  0000 C CNN
+F 1 "LTC1151CN8" H 4950 4350 44  0000 C CNN
+F 2 "" H 5000 5200 60  0000 C CNN
+F 3 "" H 5000 5200 60  0000 C CNN
+	1    4750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC1151CN8 U?
+U 1 1 55ED5558
+P 6050 4000
+F 0 "U?" H 6150 3850 60  0000 C CNN
+F 1 "LTC1151CN8" H 6350 4200 43  0000 C CNN
+F 2 "" H 6300 5050 60  0000 C CNN
+F 3 "" H 6300 5050 60  0000 C CNN
+	1    6050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4150 5550 4150
+Wire Wire Line
+	5500 3850 5550 3850
+Wire Wire Line
+	5500 3350 5500 3850
+Wire Wire Line
+	5500 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 4000
+Wire Wire Line
+	6450 4000 7000 4000
+Connection ~ 6700 4000
+$Comp
+L VCC #PWR?
+U 1 1 55ED5568
+P 4700 3800
+F 0 "#PWR?" H 4700 3650 50  0001 C CNN
+F 1 "VCC" H 4700 3950 50  0000 C CNN
+F 2 "" H 4700 3800 60  0000 C CNN
+F 3 "" H 4700 3800 60  0000 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR?
+U 1 1 55ED556E
+P 6000 3600
+F 0 "#PWR?" H 6000 3450 50  0001 C CNN
+F 1 "VCC" H 6000 3750 50  0000 C CNN
+F 2 "" H 6000 3600 60  0000 C CNN
+F 3 "" H 6000 3600 60  0000 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VEE #PWR?
+U 1 1 55ED5574
+P 4700 4550
+F 0 "#PWR?" H 4700 4400 50  0001 C CNN
+F 1 "VEE" H 4700 4700 50  0000 C CNN
+F 2 "" H 4700 4550 60  0000 C CNN
+F 3 "" H 4700 4550 60  0000 C CNN
+	1    4700 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L VEE #PWR?
+U 1 1 55ED557A
+P 6000 4550
+F 0 "#PWR?" H 6000 4400 50  0001 C CNN
+F 1 "VEE" H 6000 4700 50  0000 C CNN
+F 2 "" H 6000 4550 60  0000 C CNN
+F 3 "" H 6000 4550 60  0000 C CNN
+	1    6000 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 4550 6000 4350
+Wire Wire Line
+	6000 3650 6000 3600
+Wire Wire Line
+	4700 3800 4700 3800
+Wire Wire Line
+	4700 4500 4700 4550
+Wire Wire Line
+	5250 3350 5250 4150
+Wire Wire Line
+	4650 3350 5250 3350
+Connection ~ 5250 4150
+$Comp
+L R_Small R?
+U 1 1 55ED5587
+P 4550 3350
+F 0 "R?" H 4580 3370 50  0000 L CNN
+F 1 "9k" H 4580 3310 50  0000 L CNN
+F 2 "" H 4550 3350 60  0000 C CNN
+F 3 "" H 4550 3350 60  0000 C CNN
+	1    4550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 55ED558E
+P 3800 3350
+F 0 "R?" H 3830 3370 50  0000 L CNN
+F 1 "1k" H 3830 3310 50  0000 L CNN
+F 2 "" H 3800 3350 60  0000 C CNN
+F 3 "" H 3800 3350 60  0000 C CNN
+	1    3800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 55ED5595
+P 3550 3350
+F 0 "#PWR?" H 3550 3150 50  0001 C CNN
+F 1 "GNDPWR" H 3550 3220 50  0001 C CNN
+F 2 "" H 3550 3300 60  0000 C CNN
+F 3 "" H 3550 3300 60  0000 C CNN
+	1    3550 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4000 4150 4000
+Wire Wire Line
+	4150 4000 4150 3350
+Wire Wire Line
+	3550 3350 3700 3350
+Wire Wire Line
+	3900 3350 4450 3350
+Connection ~ 4150 3350
+Wire Wire Line
+	4250 4300 3750 4300
+Text HLabel 7000 4000 2    60   Input ~ 0
+SET
+$EndSCHEMATC
